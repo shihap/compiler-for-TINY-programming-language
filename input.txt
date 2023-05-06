@@ -1,0 +1,84 @@
+{
+assignment 3 program by shehab ahmed mohamed 20170129 cs_is_2 , copy the comment into input.txt
+note : handling negative numbers (in inc value) as subtraction operation (0-x) [option 1]
+}
+
+{test 1 , output = 36}
+sum:=0;
+for i from 1 to n inc 2
+startfor
+sum:=sum+i;
+if i=11 then break end
+endfor;
+write sum
+;
+{test 2 , output = 1 , 2 , 3}
+for j from 1 to 4 inc 1
+startfor
+write j
+endfor
+;
+{test 3 , output = 7 , 6 , 5 , 4}
+for k from 7 to 3 inc 0-1
+startfor
+write k
+endfor
+;
+{test 4 , output = 1 , 2}
+for l from 1 to 4 inc 1
+startfor
+write l;
+if l=2 then break end
+endfor
+;
+{test 5 , output = 7 , 6}
+for m from 7 to 3 inc 0-1
+startfor
+write m;
+if m=6 then break end
+endfor
+;
+{test 6 , output = no output because to expr == from expr }
+for n from 1 to 1 inc 0
+startfor
+write n
+endfor
+;
+{test 7 , output = 6144}
+x := 1;
+for o from 16 to 1 inc 0-4
+startfor
+x := x * o
+endfor;
+write x
+;
+{test 8 , output = 11 , 14 , 17}
+for p from 5-4 to 110/11 inc 1+2
+startfor
+write p + 10
+endfor
+;
+{test 9 , output = 1 , 2 , 10 , 20 , 30}
+for q from 1 to 5 inc 1
+startfor
+if q=3 then
+write 10;
+if q=3 then
+write 20;
+if q=3 then
+ write 30;
+ break
+end
+end
+end
+;write q
+endfor
+;
+{test 10 , output = 11 , 12 , 13 , 21 , 22 , 23 , 31 , 32 , 33 }
+for r from 1 to 4 inc 1
+startfor
+for s from 1 to 4 inc 1
+startfor
+write (r*10)+s
+endfor
+endfor
